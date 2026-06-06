@@ -37,8 +37,14 @@ Para correr el script, ejecuta el siguiente comando en tu terminal:
 
 Bash
 python app_gemini.py
+
+
 Evidencia de Ejecución 
+
+
 A continuación, se muestra la captura de pantalla que demuestra el correcto funcionamiento del script y la respuesta recibida por la API:
+
+
 [Evidencia de ejecución](https://github.com/user-attachments/assets/0dbda15a-3065-405d-9614-d6e752ccd507)
 
 
