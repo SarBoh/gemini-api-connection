@@ -1,29 +1,27 @@
 import os
 from google import genai
-from dotenv import load_dotenv
 
-# Cargar variables de entorno del archivo .env
-load_dotenv()
-clave_api = os.getenv("GEMINI_API_KEY")
+def conectar_gemini():
+    # Buscamos la API key en las variables de entorno por seguridad
+    api_key = os.environ.get("GEMINI_API_KEY")
+    
+    if not api_key:
+        print("Error: La variable de entorno GEMINI_API_KEY no está configurada.")
+        return
 
-if not clave_api:
-    print("❌ Error: No se encontró la variable GEMINI_API_KEY en el archivo .env")
-else:
-    # Inicializar el cliente oficial de Gemini
-    client = genai.Client(api_key=clave_api)
+    try:
+        # Inicializamos el cliente
+        client = genai.Client(api_key=api_key)
+        
+        # Hacemos una petición simple de prueba usando el modelo flash
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents='Genera un mensaje corto que diga: "¡Conexión exitosa con la API de Gemini!"',
+        )
+        
+        
+    except Exception as e:
+        print(f" Ocurrió un error al conectar con la API: {e}")
 
-    def ejecutar_consulta():
-        print("🛰️ Ejecutando consulta a Gemini...")
-        try:
-            respuesta = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents="Preséntate como experto en ML y responde de forma breve: ¿Cuáles son las mejores prácticas para entrenar un modelo?"
-            )
-            print("\n================ Respuesta de Gemini ================")
-            print(respuesta.text)
-            print("=====================================================")
-        except Exception as e:
-            print("❌ Error al ejecutar la consulta:", e)
-
-    if __name__ == "__main__":
-        ejecutar_consulta()
+if __name__ == "__main__":
+    conectar_gemini()
