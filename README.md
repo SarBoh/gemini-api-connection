@@ -63,4 +63,6 @@ Para correr el script, ejecuta el siguiente comando en tu terminal:
 python app.py
 Evidencia de Ejecución 
 A continuación, se muestra la captura de pantalla que demuestra el correcto funcionamiento del script y la respuesta recibida por la API:
-<img width="1193" height="157" alt="image" src="https://github.com/user-attachments/assets/b6f2755c-6df8-4633-9629-a38c9894b44e" />
+
+<img width="1193" height="157" alt="Captura de pantalla 2026-06-06 103723" src="https://github.com/user-attachments/assets/0dbda15a-3065-405d-9614-d6e752ccd507" />
+
