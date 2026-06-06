@@ -21,7 +21,6 @@ Configurar la Variable de Entorno:
 
 En Windows (CMD):
 
-DOS
      set GEMINI_API_KEY="tu_api_key_aquíAquí tienes el fragmento exacto listo para copiar y pegar en tu archivo `README.md`. Incluye los pasos desde la instalación hasta la ejecución y el espacio para tu captura de pantalla:
 
 ```markdown
@@ -62,5 +61,5 @@ Para correr el script, ejecuta el siguiente comando en tu terminal:
 
 ```bash
 python app.py
-Evidencia de Ejecución 📸
+Evidencia de Ejecución 
 A continuación, se muestra la captura de pantalla que demuestra el correcto funcionamiento del script y la respuesta recibida por la API:
