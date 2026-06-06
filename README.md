@@ -1,5 +1,5 @@
 Markdown
-# Conexión a la API de Gemini 🚀
+# Conexión a la API de Gemini 
 
 Este repositorio contiene un script básico en Python para conectar y realizar peticiones a la API de Gemini utilizando la librería oficial de Google.
 
@@ -37,7 +37,7 @@ Para correr el script, ejecuta el siguiente comando en tu terminal:
 
 Bash
 python app_gemini.py
-Evidencia de Ejecución 📸
+Evidencia de Ejecución 
 A continuación, se muestra la captura de pantalla que demuestra el correcto funcionamiento del script y la respuesta recibida por la API:
 [Evidencia de ejecución](https://github.com/user-attachments/assets/0dbda15a-3065-405d-9614-d6e752ccd507)
 
